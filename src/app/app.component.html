@@ -1,0 +1,29 @@
+<h1 class="title">Green Leaves</h1>
+  <form class="form">
+      <div>
+          <h3>Nombre:</h3><input type="text" name="nombre" />
+        <br />
+      </div>
+      <div>
+          <h3>E-mail:</h3><input type="text" name="email" />
+        <br />
+      </div>  
+      <div>
+          <h3>Teléfono:</h3><input type="text" name="telefono" />
+        <br />
+      </div>
+      <div><h3>Fecha:</h3><mat-form-field appearance="fill">
+                <mat-label class="mat-label"></mat-label>
+                <input matInput [matDatepicker]="picker1"  style="display:flex; flex-direction: column;">
+                <mat-datepicker-toggle class="mat-datepicker-toggle" matSuffix [for]="picker1">
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field> <br />
+      </div>
+      <div>
+          <h3>Ciudad y Estado:</h3><input type="text" name="ciudad" />
+        <br />
+      </div>
+      <input  onclick ="clickBtn()" class="inputSend" type="submit" value="Enviar" />
+  </form>
+
